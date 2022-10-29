@@ -29,7 +29,7 @@
      - name: Install dependencies 📦
        #Using npm ci is generally faster than running npm install
        run: |
-#         cd test-app
+         cd test-app
          npm ci
      - name: Build the app 🏗
        run: |
