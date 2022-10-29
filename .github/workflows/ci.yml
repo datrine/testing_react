@@ -29,22 +29,22 @@
      - name: Install dependencies 📦
        #Using npm ci is generally faster than running npm install
        run: |
-         cd test-app
+         cd .
          npm ci
      - name: Build the app 🏗
        run: |
-         cd test-app
+         cd .
          npm run build
      - name: Run component tests 🔸
        run: |
-         cd test-app
+         cd .
          npm run test
      - name: Start the app 📤
        run: |
-         cd test-app
+         cd .
          npm start &
          npx wait-on --timeout 60000
      - name: Run visual tests 👁
        run: |
-         cd test-app
+         cd .
          npm run test:visual
