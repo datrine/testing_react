@@ -44,7 +44,3 @@
          cd .
          npm start &
          npx wait-on --timeout 60000
-     - name: Run visual tests 👁
-       run: |
-         cd .
-         npm run test:visual
